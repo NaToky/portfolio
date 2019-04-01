@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <router-view class="first"/>
-    <router-view class="secnd" name="main"/>
+    <router-view />
   </div>
 </template>
 
@@ -13,9 +12,3 @@ export default {
   }
 }
 </script>
-
-<style lag="sass">
-#app {
-
-}
-</style>

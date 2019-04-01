@@ -1,11 +1,10 @@
 import Projects from '../components/projects.vue'
-import MPHeader from '../components/MainPage-Header.vue'
-import MPMain from '../components/MainPage-MainSection.vue'
+import HomePage from '../components/MainPage-Header.vue'
+
 export default [
   {path:'/',
   components:{
-    default:MPHeader,
-    main: MPMain,
+    default:HomePage,
   }
 },
 {path:'/projects',

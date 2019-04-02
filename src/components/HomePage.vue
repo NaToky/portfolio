@@ -9,7 +9,7 @@
           v-for="nav in links"
           v-bind:key="nav.key"
           >
-            <router-link :to="nav.ref">{{ nav.name }} </router-link>
+            <router-link :to="nav.ref" class="line">{{ nav.name }} </router-link>
           </li>
         </ul>
       </div>
@@ -26,7 +26,7 @@
         <button class="buttonModel" id="aboutButton"> About </button>
       </div>
       <div class="pageSectionTwo">
-        <h2 id="pSTittle"> Top 5 projects </h2>
+        <h2 id="pSTittle"> Top projects </h2>
         <div class="projectsHandler">
           <div class="project"
           v-for="projects in projects"
@@ -35,13 +35,27 @@
           >
           </div>
         </div>
-        <button class="buttonModel" id="projectsButton"> More Projects </button>
+        <button class="buttonModel" id="projectsButton"> All Projects </button>
       </div>
-      <div class="pageSection3">
-        <h2 id="pSTittle"> Language </h2>
+      <div class="pageSectionThree">
+        <h2 id="pSTittle"> Technical knowledge </h2>
+
+            <div class="languageHandler">
+              <div v-for="lang in languages" class="languages">
+                <p class="LangTitle">{{lang.name}}</p>
+                <div class="LevelBack">
+                  <div class="Level" v-bind:style="{height: '100%', 'background-color': '#004e52', width: lang.level + '%'}"></div>
+                </div>
+              </div>
+              <p id="note"> *Based on usage in projects </p>
+            </div>
+
       </div>
     </div>
-
+    <div class="footer">
+      <div class="SiteMap"></div>
+      <div class="GitHub"></div>
+    </div>
   </div>
 </template>
 
@@ -89,8 +103,43 @@
           name:"Cookie Clicker",
           key: "3",
           id: "projectThree"
+        },
+        {
+          name:"Todo",
+          key:"4",
+          id:"projectFour"
         }
-      ]
+      ],
+      languages: [
+      {
+      name:"Html/JSX",
+      level: 90,
+      },
+      {
+      name:"CSS/SASS",
+      level: 90,
+      },
+      {
+      name:"Javascript/JQuery",
+      level: 70,
+      },
+      {
+      name:"Vue.js",
+      level: 50,
+      },
+      {
+      name:"React.js",
+      level: 40,
+      },
+      {
+      name:"Node.js",
+      level: 20,
+      },
+      {
+      name:"MongoDB",
+      level: 20,
+      },
+    ]
       }
     }
   }

@@ -1,5 +1,5 @@
 import Projects from '../components/projects.vue'
-import HomePage from '../components/MainPage-Header.vue'
+import HomePage from '../components/HomePage.vue'
 
 export default [
   {

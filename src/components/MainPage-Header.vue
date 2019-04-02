@@ -5,7 +5,10 @@
     <div class="Header">
       <div class="NavMenu">
         <ul>
-          <li class="navItem" v-for="nav in links" v-bind:key="nav.key">
+          <li class="navItem"
+          v-for="nav in links"
+          v-bind:key="nav.key"
+          >
             <router-link :to="nav.ref">{{ nav.name }} </router-link>
           </li>
         </ul>
@@ -18,22 +21,20 @@
       <div class="pageSectionOne">
         <div id="profileImage"></div>
         <div id="profileImageDescription">
-          <p id="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+          <p id="Description">{{Description}}</p>
         </div>
         <button class="buttonModel" id="aboutButton"> About </button>
       </div>
       <div class="pageSectionTwo">
         <h2 id="pSTittle"> Top 5 projects </h2>
         <div class="projectsHandler">
-          <div class="project" id="projectOne">
-          </div>
-          <div class="project" id="projectTwo">
+          <div class="project"
+          v-for="projects in projects"
+          v-bind:id="projects.id"
+          v-bind:key="projects.key"
+          >
           </div>
         </div>
-
         <button class="buttonModel" id="projectsButton"> More Projects </button>
       </div>
       <div class="pageSection3">
@@ -49,6 +50,10 @@
     name: 'HomePage',
     data() {
       return {
+        Description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore' +
+          'et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' +
+          'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' +
+          'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ',
         links: [{
             name: "Home",
             ref: "1",
@@ -69,7 +74,23 @@
             ref: "4",
             key: "4"
           }
-        ]
+        ],
+        projects: [{
+          name: "Portfolio",
+          key: "1",
+          id: "projectOne"
+        },
+        {
+          name:"Vertigoal",
+          key: "2",
+          id: "projectTwo"
+        },
+        {
+          name:"Cookie Clicker",
+          key: "3",
+          id: "projectThree"
+        }
+      ]
       }
     }
   }

@@ -125,11 +125,11 @@
       },
       {
       name:"Vue.js",
-      level: 50,
+      level: 60,
       },
       {
       name:"React.js",
-      level: 40,
+      level: 35,
       },
       {
       name:"Node.js",

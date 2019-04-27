@@ -1,14 +1,9 @@
-<template>
-
+<template lang="html">
   <div class="HomePage">
-
     <div class="Header">
       <div class="NavMenu">
         <ul>
-          <li class="navItem"
-          v-for="nav in links"
-          v-bind:key="nav.key"
-          >
+          <li class="navItem" v-for="nav in links" v-bind:key="nav.key">
             <router-link :to="nav.ref" class="line">{{ nav.name }} </router-link>
           </li>
         </ul>
@@ -28,11 +23,7 @@
       <div class="pageSectionTwo">
         <h2 id="pSTittle"> Top projects </h2>
         <div class="projectsHandler">
-          <div class="project"
-          v-for="projects in projects"
-          v-bind:id="projects.id"
-          v-bind:key="projects.key"
-          >
+          <div class="project" v-for="projects in projects" v-bind:id="projects.id" v-bind:key="projects.key">
           </div>
         </div>
         <button class="buttonModel" id="projectsButton"> All Projects </button>
@@ -40,26 +31,54 @@
       <div class="pageSectionThree">
         <h2 id="pSTittle"> Technical knowledge </h2>
 
-            <div class="languageHandler">
-              <div v-for="lang in languages" class="languages">
-                <p class="LangTitle">{{lang.name}}</p>
-                <div class="LevelBack">
-                  <div class="Level" v-bind:style="{height: '100%', 'background-color': '#004e52', width: lang.level + '%'}"></div>
-                </div>
-              </div>
-              <p id="note"> *Based on usage in projects </p>
+        <div class="languageHandler">
+          <div v-for="lang in languages" v-bind:key="lang.key" class="languages">
+            <p class="LangTitle">{{lang.name}}</p>
+            <div class="LevelBack">
+              <div class="Level" v-bind:style="{height: '100%', 'background-color': '#004e52', width: lang.level + '%'}"></div>
             </div>
-
+          </div>
+          <p id="note"> *Based on usage in projects </p>
+        </div>
       </div>
     </div>
     <div class="footer">
-      <div class="SiteMap"></div>
-      <div class="GitHub"></div>
+      <h1 class="SM_Header">Site Map</h1>
+      <div class="SiteMap">
+          <div class="SM_Section">
+          <h1 class="SM_Title">Home Page</h1>
+            <p class="SM_UnderTitle">Resume</p>
+            <p class="SM_UnderTitle">Top Projects</p>
+            <p class="SM_UnderTitle">Technical Knowledge</p>
+          </div>
+          <div class="SM_Section">
+          <h1 class="SM_Title">Projects</h1>
+            <p class="SM_UnderTitle">Personal Projects</p>
+            <p class="SM_UnderTitle">Group Projects</p>
+            <p class="SM_UnderTitle">Client Projects</p>
+          </div>
+          <div class="SM_Section">
+          <h1 class="SM_Title">Contact</h1>
+            <p class="SM_UnderTitle">Send Email</p>
+          </div>
+          <div class="SM_Section">
+          <h1 class="SM_Title">About</h1>
+            <p class="SM_UnderTitle">Resume</p>
+            <p class="SM_UnderTitle">Who am I</p>
+          </div>
+      </div>
+      <div class="Logo">
+      <img class="FT_Logo" src="../assets/githubLogo.png" alt="GitHub" width="40px" height="40px">
+      <img class="FT_Logo" src="../assets/linkedinLogo.png" alt="LinkedIn" width="40px" height="40px">
+      <img class="FT_Logo" src="../assets/facebookLogo.png" alt="FaceBook" width="40px" height="40px">
+      </div>
+      <h1 class="Copyright">Sergey Panasenko © ProgMug.net 2019-2020</h1>
     </div>
   </div>
 </template>
 
 <script>
+  import './style.min.css'
   export default {
     name: 'HomePage',
     data() {
@@ -90,56 +109,55 @@
           }
         ],
         projects: [{
-          name: "Portfolio",
-          key: "1",
-          id: "projectOne"
-        },
-        {
-          name:"Vertigoal",
-          key: "2",
-          id: "projectTwo"
-        },
-        {
-          name:"Cookie Clicker",
-          key: "3",
-          id: "projectThree"
-        },
-        {
-          name:"Todo",
-          key:"4",
-          id:"projectFour"
-        }
-      ],
-      languages: [
-      {
-      name:"Html/JSX",
-      level: 90,
-      },
-      {
-      name:"CSS/SASS",
-      level: 90,
-      },
-      {
-      name:"Javascript/JQuery",
-      level: 70,
-      },
-      {
-      name:"Vue.js",
-      level: 60,
-      },
-      {
-      name:"React.js",
-      level: 35,
-      },
-      {
-      name:"Node.js",
-      level: 20,
-      },
-      {
-      name:"MongoDB",
-      level: 20,
-      },
-    ]
+            name: "Portfolio",
+            key: "1",
+            id: "projectOne"
+          },
+          {
+            name: "Vertigoal",
+            key: "2",
+            id: "projectTwo"
+          },
+          {
+            name: "Cookie Clicker",
+            key: "3",
+            id: "projectThree"
+          },
+          {
+            name: "Todo",
+            key: "4",
+            id: "projectFour"
+          }
+        ],
+        languages: [{
+            name: "Html/JSX",
+            level: 90,
+          },
+          {
+            name: "CSS/SASS",
+            level: 90,
+          },
+          {
+            name: "Javascript/JQuery",
+            level: 70,
+          },
+          {
+            name: "Vue.js",
+            level: 60,
+          },
+          {
+            name: "React.js",
+            level: 35,
+          },
+          {
+            name: "Node.js",
+            level: 20,
+          },
+          {
+            name: "MongoDB",
+            level: 20,
+          },
+        ]
       }
     }
   }

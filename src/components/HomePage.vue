@@ -8,7 +8,7 @@
           </li>
         </ul>
       </div>
-      <h2 id="headerMainText">Hello, my name is Sergey Panasenko and I am a Font End Developer </h2>
+      <h2 id="headerMainText">Hello, my name is Sergey Panasenko and I am a Front End Developer </h2>
       <button id="headerMainButton"> Take a look at my work </button>
     </div>
 
@@ -64,7 +64,7 @@
           <div class="SM_Section">
           <h1 class="SM_Title">About</h1>
             <p class="SM_UnderTitle">Resume</p>
-            <p class="SM_UnderTitle">Who am I</p>
+            <p class="SM_UnderTitle">Who I am</p>
           </div>
       </div>
       <div class="Logo">
@@ -162,7 +162,3 @@
     }
   }
 </script>
-<style lang="SASS">
-
-
-</style>

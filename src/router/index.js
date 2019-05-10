@@ -1,4 +1,4 @@
-import Projects from '../components/projects.vue'
+import Projects from '../components/Projects.vue'
 import HomePage from '../components/HomePage.vue'
 
 export default [

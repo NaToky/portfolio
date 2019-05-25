@@ -70,9 +70,9 @@
           </div>
       </div>
       <div class="Logo">
-      <img class="FT_Logo" src="../assets/githubLogo.png" alt="GitHub" width="40px" height="40px"><a href="https://github.com/NaToky/"/></image>
-      <img class="FT_Logo" src="../assets/linkedinLogo.png" alt="LinkedIn" width="40px" height="40px"><a href="https://www.linkedin.com/in/sergey-panasenko-838044167/"/></image>
-      <img class="FT_Logo" src="../assets/facebookLogo.png" alt="FaceBook" width="40px" height="40px"><a href="https://www.facebook.com/NaToKy24"/></image>
+      <img class="FT_Logo" src="../assets/githubLogo.png" alt="GitHub" width="40px" height="40px"><a href="https://github.com/NaToky/"/></img>
+      <img class="FT_Logo" src="../assets/linkedinLogo.png" alt="LinkedIn" width="40px" height="40px"><a href="https://www.linkedin.com/in/sergey-panasenko-838044167/"/></img>
+      <img class="FT_Logo" src="../assets/facebookLogo.png" alt="FaceBook" width="40px" height="40px"><a href="https://www.facebook.com/NaToKy24"/></img>
       </div>
       <h1 class="Copyright">Sergey Panasenko © ProgMug.net 2019-2020</h1>
     </div>

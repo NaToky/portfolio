@@ -1,3 +1,4 @@
+
 <template lang="html">
   <div class="HomePage">
     <div class="Header">
@@ -23,14 +24,15 @@
       <div class="pageSectionTwo">
         <h2 id="pSTittle"> Top projects </h2>
         <div class="projectsHandler">
-          <div class="project" v-for="projects in projects" v-bind:id="projects.id" v-bind:key="projects.key">
+          <a v-for="projects in projects" v-bind:href="projects.href" v-bind:key="projects.key">
+          <div class="project" v-bind:id="projects.id">
           </div>
+          </a>
         </div>
         <button class="buttonModel" id="projectsButton"> All Projects </button>
-      </div>
+      </div> 
       <div class="pageSectionThree">
-        <h2 id="pSTittle"> Technical knowledge </h2>
-
+        <h2 id="pSTittle"> Technical knowledge </h2>Ы
         <div class="languageHandler">
           <div v-for="lang in languages" v-bind:key="lang.key" class="languages">
             <p class="LangTitle">{{lang.name}}</p>
@@ -78,7 +80,7 @@
 </template>
 
 <script>
-  import './style.min.css'
+  import './style.css'
   export default {
     name: 'HomePage',
     data() {
@@ -111,11 +113,13 @@
         projects: [{
             name: "Portfolio",
             key: "1",
+            href: "https://progmug.net/",
             id: "projectOne"
           },
           {
             name: "Vertigoal",
             key: "2",
+            href: "https://vertigoal2019bdeb.site/",
             id: "projectTwo"
           },
           {

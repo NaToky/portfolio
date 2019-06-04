@@ -5,7 +5,7 @@
       <div class="NavMenu">
         <ul>
           <li class="navItem" v-for="nav in links" v-bind:key="nav.key">
-            <router-link :to="nav.ref" class="line">{{ nav.name }} </router-link>
+            <router-link :to="nav.ref" class="line"> {{ nav.name }} </router-link>
           </li>
         </ul>
       </div>
@@ -32,7 +32,7 @@
         <button class="buttonModel" id="projectsButton"> All Projects </button>
       </div> 
       <div class="pageSectionThree">
-        <h2 id="pSTittle"> Technical knowledge </h2>Ы
+        <h2 id="pSTittle"> Technical knowledge </h2>
         <div class="languageHandler">
           <div v-for="lang in languages" v-bind:key="lang.key" class="languages">
             <p class="LangTitle">{{lang.name}}</p>
@@ -91,7 +91,7 @@
           'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ',
         links: [{
             name: "Home",
-            ref: "1",
+            ref: "/",
             key: "1"
           },
           {
@@ -101,12 +101,12 @@
           },
           {
             name: "Contact",
-            ref: "3",
+            ref: "contact",
             key: "3"
           },
           {
             name: "About",
-            ref: "4",
+            ref: "about",
             key: "4"
           }
         ],

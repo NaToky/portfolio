@@ -147,7 +147,7 @@
           },
           {
             name: "Vue.js",
-            level: 60,
+            level: 70,
           },
           {
             name: "React.js",
@@ -155,11 +155,11 @@
           },
           {
             name: "Node.js",
-            level: 20,
+            level: 60,
           },
           {
             name: "MongoDB",
-            level: 20,
+            level: 60,
           },
         ]
       }

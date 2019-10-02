@@ -111,10 +111,15 @@
           }
         ],
         projects: [{
-            name: "Portfolio",
-            key: "1",
-            href: "https://progmug.net/",
-            id: "projectOne"
+            name: "KingsLeague",
+            key: "3",
+            href: "http://dev.kingsleague.ca/",
+            id: "projectThree"
+          },
+          {
+            name: "Intext Electric",
+            key: "4",
+            id: "projectFour"
           },
           {
             name: "Vertigoal",
@@ -123,14 +128,10 @@
             id: "projectTwo"
           },
           {
-            name: "Cookie Clicker",
-            key: "3",
-            id: "projectThree"
-          },
-          {
-            name: "Todo",
-            key: "4",
-            id: "projectFour"
+            name: "Portfolio",
+            key: "1",
+            href: "https://progmug.net/",
+            id: "projectOne"
           }
         ],
         languages: [{

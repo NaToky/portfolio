@@ -146,11 +146,11 @@ a:hover {
 }
 
 .project {
-  height: 190px;
+  height: 180px;
   border: 1px solid black;
-  width: 305px;
+  width: 320px;
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 40px;
   cursor: pointer;
 }
 
@@ -177,6 +177,14 @@ a:hover {
 #projectTwo {
   background-image: url("../assets/projectTwo.png");
   background-size: 100% 100%;
+}
+#projectThree{
+  background-image: url("../assets/projectThree.png");
+  background-size: 100% 100%;  
+}
+#projectFour{
+  background-image: url("../assets/projectFour.png");
+  background-size: 100% 100%;  
 }
 
 .languageHandler {

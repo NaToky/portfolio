@@ -132,6 +132,12 @@
             key: "1",
             href: "https://progmug.net/",
             id: "projectOne"
+          },
+          {
+            name: "Weather",
+            key: "5",
+            href: "https://progmug.net/",
+            id: "projectFive"
           }
         ],
         languages: [{

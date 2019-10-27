@@ -150,11 +150,11 @@
           },
           {
             name: "Javascript/JQuery",
-            level: 70,
+            level: 80,
           },
           {
             name: "Vue.js",
-            level: 70,
+            level: 80,
           },
           {
             name: "React.js",
@@ -162,11 +162,11 @@
           },
           {
             name: "Node.js",
-            level: 60,
+            level: 70,
           },
           {
             name: "MongoDB",
-            level: 60,
+            level: 80,
           },
         ]
       }

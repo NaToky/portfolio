@@ -9,7 +9,7 @@
           </li>
         </ul>
       </div>
-      <h2 id="headerMainText">Hello, my name is Sergey Panasenko and I am a Front End Developer </h2>
+      <h2 id="headerMainText">Hello, my name is Sergey Panasenko and I am a Software Developer. </h2>
       <button id="headerMainButton"> Take a look at my work </button>
     </div>
 

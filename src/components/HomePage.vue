@@ -1,11 +1,9 @@
-
 <template lang="html">
   <div class="HomePage">
     <div class="Header">
       <div class="NavMenu">
       </div>
-      <h2 id="headerMainText">Hello, my name is Sergey Panasenko and I am a Software Developer. </h2>
-      <button id="headerMainButton"> Take a look at my work </button>
+      <h2 id="headerMainText">Welcome to ProgMug, we are a software development compagny dedicated to build stunning websites for entreprises  </h2>
     </div>
 
     <div class="MainSection">
@@ -14,60 +12,55 @@
         <div id="profileImageDescription">
           <p id="Description">{{Description}}</p>
         </div>
-        <button class="buttonModel" id="aboutButton"> About </button>
       </div>
-      <div class="pageSectionTwo">
+
+      <div class="pageSection">
+        <h2 id="pSTittle"> Products </h2>
+        <div class="Product">
+        <h2 id="League_Title">League Management Software </h2>
+        </div>
+        <div class="Product">
+        <h2 id="League_Title">Website</h2>
+        </div>
+      </div>
+
+      <div class="pageSection">
         <h2 id="pSTittle"> Top projects </h2>
         <div class="projectsHandler">
           <a v-for="projects in projects" v-bind:href="projects.href" v-bind:key="projects.key">
-          <div class="project" v-bind:id="projects.id">
-          </div>
+            <div class="project" v-bind:id="projects.id">
+            </div>
           </a>
         </div>
-        <button class="buttonModel" id="projectsButton"> All Projects </button>
-      </div> 
-      <div class="pageSectionThree">
-        <h2 id="pSTittle"> Technical knowledge </h2>
+      </div>
+
+      <div class="pageSection">
+        <h2 id="pSTittle"> Used Technologies</h2>
         <div class="languageHandler">
           <div v-for="lang in languages" v-bind:key="lang.key" class="languages">
             <p class="LangTitle">{{lang.name}}</p>
             <div class="LevelBack">
-              <div class="Level" v-bind:style="{height: '100%', 'background-color': '#004e52', width: lang.level + '%'}"></div>
+              <div class="Level"
+                v-bind:style="{height: '100%', 'background-color': '#004e52', width: lang.level + '%'}"></div>
             </div>
           </div>
           <p id="note"> *Based on usage in projects </p>
         </div>
       </div>
     </div>
+
     <div class="footer">
       <h1 class="SM_Header">Site Map</h1>
       <div class="SiteMap">
-          <div class="SM_Section">
-          <h1 class="SM_Title">Home Page</h1>
-            <p class="SM_UnderTitle">Resume</p>
-            <p class="SM_UnderTitle">Top Projects</p>
-            <p class="SM_UnderTitle">Technical Knowledge</p>
-          </div>
-          <div class="SM_Section">
-          <h1 class="SM_Title">Projects</h1>
-            <p class="SM_UnderTitle">Personal Projects</p>
-            <p class="SM_UnderTitle">Group Projects</p>
-            <p class="SM_UnderTitle">Client Projects</p>
-          </div>
-          <div class="SM_Section">
-          <h1 class="SM_Title">Contact</h1>
-            <p class="SM_UnderTitle">Send Email</p>
-          </div>
-          <div class="SM_Section">
-          <h1 class="SM_Title">About</h1>
-            <p class="SM_UnderTitle">Resume</p>
-            <p class="SM_UnderTitle">Who I am</p>
-          </div>
+        
       </div>
       <div class="Logo">
-      <a href="https://github.com/NaToky/"><img class="FT_Logo" src="../assets/githubLogo.png" alt="GitHub" width="40px" height="40px"></a>
-      <a href="https://www.linkedin.com/in/sergey-panasenko-838044167/"><img class="FT_Logo" src="../assets/linkedinLogo.png" alt="LinkedIn" width="40px" height="40px"></a>
-      <a href="https://www.facebook.com/NaToKy24"><img class="FT_Logo" src="../assets/facebookLogo.png" alt="FaceBook" width="40px" height="40px"></a>
+        <a href="https://github.com/NaToky/"><img class="FT_Logo" src="../assets/githubLogo.png" alt="GitHub"
+            width="40px" height="40px"></a>
+        <a href="https://www.linkedin.com/in/sergey-panasenko-838044167/"><img class="FT_Logo"
+            src="../assets/linkedinLogo.png" alt="LinkedIn" width="40px" height="40px"></a>
+        <a href="https://www.facebook.com/NaToKy24"><img class="FT_Logo" src="../assets/facebookLogo.png" alt="FaceBook"
+            width="40px" height="40px"></a>
       </div>
       <h1 class="Copyright">Sergey Panasenko © ProgMug.net 2019-2020</h1>
     </div>

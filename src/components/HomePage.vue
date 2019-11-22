@@ -3,7 +3,7 @@
     <div class="Header">
       <div class="NavMenu">
       </div>
-      <h2 id="headerMainText">Welcome to ProgMug, we are a software development compagny dedicated to build stunning websites for entreprises  </h2>
+      <h2 id="headerMainText">Welcome to ProgMug, we are a small startup dedicated to build stunning websites for entreprises  </h2>
     </div>
 
     <div class="MainSection">

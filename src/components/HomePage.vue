@@ -3,11 +3,6 @@
   <div class="HomePage">
     <div class="Header">
       <div class="NavMenu">
-        <ul>
-          <li class="navItem" v-for="nav in links" v-bind:key="nav.key">
-            <router-link :to="nav.ref" class="line"> {{ nav.name }} </router-link>
-          </li>
-        </ul>
       </div>
       <h2 id="headerMainText">Hello, my name is Sergey Panasenko and I am a Software Developer. </h2>
       <button id="headerMainButton"> Take a look at my work </button>
@@ -89,27 +84,6 @@
           'et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' +
           'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' +
           'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ',
-        links: [{
-            name: "Home",
-            ref: "/",
-            key: "1"
-          },
-          {
-            name: "Projects",
-            ref: "projects",
-            key: "2"
-          },
-          {
-            name: "Contact",
-            ref: "contact",
-            key: "3"
-          },
-          {
-            name: "About",
-            ref: "about",
-            key: "4"
-          }
-        ],
         projects: [{
             name: "KingsLeague",
             key: "3",

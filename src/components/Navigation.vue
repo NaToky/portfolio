@@ -21,6 +21,7 @@
     text-decoration: none;
     padding: 20px;
     font-weight: bold;
+    cursor: pointer;
     font-size: 20px;
 }
 .Nav{

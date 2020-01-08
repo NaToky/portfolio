@@ -5,6 +5,7 @@
     <svg width="100%" height="100%">
       <rect y='0' x='0' width="140%" height='100%' fill="black" transform = "translate(-200, 450), rotate(-9 0 0)"/>
     </svg>
+    <button id="productButton"> OUR PRODUCTS </button>
     <div class="Anno">
       <h4> New </h4>
       <h2> SPORT LEAGUE MANAGMENT S/W </h2>
@@ -27,7 +28,7 @@
       <div class="section">
       <h2> Buisiness </h2>
       <p> Privacy Policy </p>
-      <p> Privacy Policy </p>
+      <p> Refund Policy </p>
       </div>
       <div class="section">
       <h2> Contact </h2>
@@ -148,6 +149,21 @@ margin-bottom: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+#productButton{
+  position: absolute;
+  bottom: 180px;
+  right: 120px;
+  width: 320px;
+  float: right;
+  font-weight: bold;
+  font-size: 20px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #22F9BF;
+  border:rgb(12, 12, 12);
+  color: black;
+  border-radius: 30px;
 }
 @keyframes wave {
     0% {

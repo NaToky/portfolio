@@ -16,10 +16,10 @@
       <h3> learn more ...</h3>
     </div>
     <svg class="wave" xmlns="http://www.w3.org/2000/svg" width="100%" height="80" viewBox="0 0 1920 80">
-    <path id="Path_3" data-name="Path 3" d="M0,364.809s384.677-36.413,841.347-7.961,423.707,40.678,673.757,49.864,405.345,0,405.345,0v16.461H0Z" transform="translate(0.5 -345.389)" fill="rgba(29,91,95,0.27)" stroke="rgba(0,117,0,0.56)" stroke-width="1" opacity="0.88"/>
+    <path id="Path_3" data-name="Path 3" d="M0,364.809s384.677-36.413,841.347-7.961,423.707,40.678,673.757,49.864,405.345,0,405.345,0v16.461H0Z" transform="translate(0.5 -345.389)" fill="rgba(29,91,95,0.27)" stroke="rgba(0,0,0)" stroke-width="1" opacity="0.88"/>
     </svg>
     <svg class="wave" id="wave2" xmlns="http://www.w3.org/2000/svg" width="100%" height="240" viewBox="0 0 1920 200">
-    <path id="Path_2" data-name="Path 2" d="M1908.6,765.91c-2.13,2.342-481.929-6.545-802.616-72.223S-10.452,585.1-10.452,585.1V804.339H1908.6S1910.732,763.568,1908.6,765.91Z" transform="translate(11.452 -584.049)" fill="#004e52" stroke="rgba(94,255,132,0.6)" stroke-width="2" opacity="0.42"/>
+    <path id="Path_2" data-name="Path 2" d="M1908.6,765.91c-2.13,2.342-481.929-6.545-802.616-72.223S-10.452,585.1-10.452,585.1V804.339H1908.6S1910.732,763.568,1908.6,765.91Z" transform="translate(11.452 -584.049)" fill="#003151" stroke="rgba(0,0,0)" stroke-width="2" opacity="0.42"/>
     </svg>
 
     <h1 id="Logo"> ProgMug.net </h1>

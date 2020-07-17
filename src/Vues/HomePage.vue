@@ -22,7 +22,7 @@
     <path id="Path_2" data-name="Path 2" d="M1908.6,765.91c-2.13,2.342-481.929-6.545-802.616-72.223S-10.452,585.1-10.452,585.1V804.339H1908.6S1910.732,763.568,1908.6,765.91Z" transform="translate(11.452 -584.049)" fill="#004e52" stroke="rgba(94,255,132,0.6)" stroke-width="2" opacity="0.42"/>
     </svg>
 
-    <h1 id="Logo"> ProgMug.net </h1>
+    <h1 id="Logo"> ProgMug.ca </h1>
     </div>
     <div class="footer">
       <div class="section">
